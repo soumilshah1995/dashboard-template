@@ -1,0 +1,11 @@
+version: "3.7"
+
+services:
+  dashboardnew:
+    build: ./
+    container_name: dashboardnew
+    env_file:
+      - dev.env
+    restart: always
+    ports:
+      - "8080:80"
